@@ -51,7 +51,7 @@ while True:
                     new_current_balance_1 = withdraw_money(current_balance_1,Deduct_Amount)
                     #adds 1 to count so that a new value can be stored in the current_balance_1 and always saves the latest value
                     count_1 = count_1 + 1
-                    print ("Your New Account Balance is ", new_current_balance_1)
+                    print ("Your New Account Balance is: £ %.2F" % new_current_balance_1)
                     break
                 elif Operation == "D":
                     try:
@@ -62,7 +62,7 @@ while True:
                         continue
                     new_current_balance_1 = add_money (current_balance_1,Add_Amount)
                     count_1 = count_1 + 1
-                    print ("Your New Account Balance is ", new_current_balance_1)
+                    print ("Your New Account Balance is: £ %.2F" % new_current_balance_1)
                     break
 
             elif int(which_account) == costumer_2_account:
@@ -77,7 +77,7 @@ while True:
                         continue
                     new_current_balance_2 = withdraw_money(current_balance_2,Deduct_Amount)
                     count_2 = count_2 + 1
-                    print ("Your New Account Balance is ", new_current_balance_2)
+                    print ("Your New Account Balance is: £ %.2F" % new_current_balance_2)
                     break
                 elif Operation == "D":
                     try:
@@ -88,7 +88,7 @@ while True:
                         continue
                     new_current_balance_2 = add_money (current_balance_2,Add_Amount)
                     count_2 = count_2 + 1
-                    print ("Your New Account Balance is ", new_current_balance_2)
+                    print ("Your New Account Balance is: £ %.2F" % new_current_balance_2)
                     break
     else:
         continue
